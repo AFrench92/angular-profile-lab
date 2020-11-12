@@ -1,0 +1,14 @@
+<form #editForm="ngForm" (ngSubmit)="editProfile(editForm)">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" [ngModel]="userProfile.name" />
+  <label for="contact">Contact Info</label>
+  <input
+    type="text"
+    name="contact"
+    id="contact"
+    [ngModel]="userProfile.contact"
+  />
+  <label for="bio">Bio</label>
+  <input type="text" name="bio" id="bio" [ngModel]="userProfile.bio" />
+  <button>Submit</button>
+</form>
